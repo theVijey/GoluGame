@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    height: 10vh;
+    background-color: aqua;
+    text-align: center;
+    padding: 1.5vh;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    background-color: whitesmoke;
+    /* height: 85vh; */
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ----------------------------------- */
+.start-sec{
+    padding-top: 25px;
+    height: 82vh;
+    width: 100%;
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+}
+
+.players{
+    background-color: aqua;
+    height: 30vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    color: black;
+    text-shadow: none;
+}
+form{
+    font-weight: bold;
+}
+input{
+    border: none;
+    width: 60%;
+    height: 5vh;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+input:focus{
+    outline: none;
+}
+
+/* ------------------------------------- */
+.display{
+    height: 82vh;
+    width: 100%;
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player-active{
+    background-color: white;
+    width: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.boxes{
+    background-color: cadetblue;
+    height: 65vmin;
+    width: 65vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1vmin;
+}
+.boxbutton{
+    height: 20vmin;
+    width: 20vmin;
+    border: none;
+    margin: 0.5vmin;
+    background-color: rgba(0, 0, 0, 0.300);
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+}
+.boxbutton:hover{
+    background-color: rgba(0, 0, 0, 0.500);
+    border: 1.5px solid rgba(255, 0, 0, 0.800);
+}
+
+/* ------------------------------------------------- */
+.result{
+    border: 2px solid red;
+    height: 10%;
+    width: 60%;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* ------------------------------- */
+.btn{
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.400);
+    border: none;
+    border-radius: 20px;
+}
+#reset:hover{
+    background-color: rgba(0, 0, 0, 0.500);
+    border: 1.5px solid rgba(255, 0, 0, 0.800);
+}
+
+.hide{
+    display: none;
+}
+.game{
+    display: none;
+}
+.msg{
+    display: none;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:752px) {
+    .players{
+        background-color: aqua;
+        height: 30vh;
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 25px;
+    }
+}

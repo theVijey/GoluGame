@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golu Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Golu Game</h1>
+    </header>
+    <main>
+<!-- --------------------------------- -->
+        <section class="start-sec hide">
+            <h2>Welcome to Yashaswi!</h2>
+            <div class="players">
+                <h4>Please Enter Players Name - </h4>
+                <form action="">
+                    Player O :
+                    <input type="text" name="player1" id="person1" placeholder="Enter Your Name" required>
+                    <br><br>
+                    Player X :
+                    <input type="text" name="player2" id="person2" placeholder="Enter Your Name" required>
+                </form>
+            </div>
+            <button type="button" onclick="startGame()" id="start" class="btn">Start Game</button>
+        </section>
+<!-- -------------------------------------------------- -->
+        <section class="display msg">
+            <div class="player-active">
+                <h5 id="playerO">Player O:</h5>
+                <h5 id="playerX">Player X:</h5>
+            </div>
+            <div class="result"></div>
+            <button id="new-game" class="btn">New Game</button>
+        </section>
+<!-- -------------------------------------------------- -->
+        <section class="display game">
+            <div class="player-active">
+                <h5 id="player1">Player O:</h5>
+                <h5 id="player2">Player X:</h5>
+            </div>
+            <div class="boxes">
+                <button class="boxbutton"></button>
+                <button class="boxbutton"></button>
+                <button class="boxbutton"></button>
+                <button class="boxbutton"></button>
+                <button class="boxbutton"></button>
+                <button class="boxbutton"></button>
+                <button class="boxbutton"></button>
+                <button class="boxbutton"></button>
+                <button class="boxbutton"></button>
+            </div>
+            <div style="display: flex; gap: 50px;">
+                <button id="reset" class="btn">Reset</button>
+                <button id="new-game2" class="btn">New Game</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Powered by : Lokography
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
