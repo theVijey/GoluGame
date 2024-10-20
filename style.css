@@ -170,4 +170,7 @@ footer{
         justify-content: space-around;
         padding: 25px;
     }
+    .player-active{
+        width: 70%;
+}
 }
