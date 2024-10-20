@@ -50,7 +50,7 @@ main{
     justify-content: space-around;
     align-items: center;
 }
-
+/* --------------------------------------- */
 .players{
     background-color: aqua;
     height: 30vh;
@@ -115,13 +115,17 @@ input:focus{
 .result{
     border: 2px solid red;
     height: 10%;
-    width: 60%;
+    width: 75%;
     background-color: dodgerblue;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight: bold;
+}
+#reset:hover{
+    background-color: rgba(0, 0, 0, 0.500);
+    border: 1.5px solid rgba(255, 0, 0, 0.800);
 }
 
 /* ------------------------------- */
@@ -134,10 +138,6 @@ input:focus{
     background-color: rgba(0, 0, 0, 0.400);
     border: none;
     border-radius: 20px;
-}
-#reset:hover{
-    background-color: rgba(0, 0, 0, 0.500);
-    border: 1.5px solid rgba(255, 0, 0, 0.800);
 }
 
 .hide{
@@ -162,15 +162,9 @@ footer{
 
 @media (max-width:752px) {
     .players{
-        background-color: aqua;
-        height: 30vh;
         width: 85vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 25px;
     }
     .player-active{
         width: 70%;
-}
+    }
 }
