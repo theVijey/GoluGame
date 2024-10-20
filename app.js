@@ -103,6 +103,7 @@ const displayWinner = (winner) =>{
     display.classList.remove("msg");
     disableButtons();
     gameDisplay.classList.add("game");
+    results.style.backgroundColor ="green";
 }
 
 const checkWinner = () =>{
