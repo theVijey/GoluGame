@@ -67,6 +67,7 @@ input{
 input:focus{
     outline: none;
 }
+
 /* ------------------------------------- */
 .player-active{
     background-color: white;
@@ -100,6 +101,7 @@ input:focus{
     background-color: rgba(0, 0, 0, 0.500);
     border: 1.5px solid rgba(255, 0, 0, 0.800);
 }
+
 /* ------------------------------------------------- */
 .result{
     border: 2px solid red;
